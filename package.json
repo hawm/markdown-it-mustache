@@ -1,0 +1,28 @@
+{
+  "name": "markdown-it-mustache",
+  "version": "0.0.1",
+  "description": "Mustache template plugin for markdown-it markdown parser",
+  "repository": "github:hawm/markdown-it-mustache",
+  "author": "hawm",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/markdown-it-mustache.umd.js",
+  "module": "./dist/markdown-it-mustache.js",
+  "exports": {
+    ".": {
+      "import": "./dist/markdown-it-mustache.js",
+      "require": "./dist/markdown-it-mustache.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite -c vite.playground.js",
+    "build": "vite build -c vite.lib.js && vite build -c vite.playground.js",
+    "preview": "vite preview -c vite.playground.js"
+  },
+  "devDependencies": {
+    "markdown-it": "^13.0.1",
+    "mustache": "^4.2.0",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {}
+}
