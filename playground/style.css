@@ -4,8 +4,7 @@
 }
 
 #input,
-#preview,
-#html {
+#preview {
   flex: 1;
   min-height: 50vh;
 }
